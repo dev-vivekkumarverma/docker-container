@@ -9,6 +9,6 @@ Hey, this is for learning and practicing docker in step by step process
 
 ## Use the given code to `create parent docker container`
 
-```sh
-    docker run -it --name docker-host --rm --privileged ubuntu:bionic
+```shell
+docker run -it --name docker-host --rm --privileged ubuntu:bionic
 ```
