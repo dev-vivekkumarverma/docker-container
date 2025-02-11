@@ -203,6 +203,10 @@ It was the idea of assigning the resources to the `containers` or  unshared name
 
 ### link to cGroup details page <a href='./cGroup_details.md'>[ click here ... ]</a>
 
+--- 
+# step in dockerfile creation
+- go to <a href='./step_to_docker.md'> [link..]</a>
+
 ---
 # <a href='./README.md'>Back to Readme</a>
 
