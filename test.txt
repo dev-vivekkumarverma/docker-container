@@ -1,0 +1,7 @@
+with cte as
+(
+    select ID, FirstName, LastName, Age from maintable_OTMHN where FirstName= 'Robert' and LastName !='Smith'
+    union  
+    select ID, FirstName, LastName, Age from maintable_OTMHN where FirstName != 'Robert' and LastName='Smith' 
+)
+select * from cte order by Age
