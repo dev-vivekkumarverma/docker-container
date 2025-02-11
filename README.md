@@ -9,6 +9,9 @@ Hey, this is for learning and practicing docker in step by step process
 
 ## Use the given code to `create parent docker container`
 
-```shell
+```sh
 docker run -it --name docker-host --rm --privileged ubuntu:bionic
 ```
+
+- Refer for detailed command and instructions
+<a href='commands and notes.md'> Link</a>
