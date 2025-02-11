@@ -34,6 +34,7 @@ docker run --init --rm --publish 3000:3000 --name my-container my-image-name
 ```
 -p is the shorthand for --publish
 
+see example this <a href='./create_a_nodejs_app/Dockerfile'>[click me..]</a>
 ---
 # multi-stage docker file
 
