@@ -39,7 +39,7 @@ The project uses:
 -   link <a href='./Dockerfile'> [click me]</a>
 
 ### ** `.Dockerignore`
--   link <a href='./Dockerignore'> [click me]</a>
+-   link <a href='./.Dockerignore'> [click me]</a>
 
 ---
 
