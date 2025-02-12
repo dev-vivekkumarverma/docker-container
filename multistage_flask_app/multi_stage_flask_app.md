@@ -58,10 +58,6 @@ docker run --init -p 5000:5000 --rm --name flask_container my-flask-app
 ```sh
 docker inspect --format='{{json .State.Health}}' flask_container
 ```
-
-
-
-
 ---
 
 ## Conclusion

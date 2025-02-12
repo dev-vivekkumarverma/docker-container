@@ -50,6 +50,8 @@ COPY --from:stage_name --chown=user_group:username /stage_content_dir /destinati
 ```
 for more see here.. <a href="./multistage_build/multistage_build.md">[click me...]</a>
 
+### see the Multistage build of a flask app 
+- link <a href='./multistage_flask_app/multi_stage_flask_app.md'> [click me...]</a>
 ---
 # `.dockerignore` file
 put all the files and folders in the .dockerignore file to not to copy it in the image
