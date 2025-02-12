@@ -57,3 +57,8 @@ for more see here.. <a href="./multistage_build/multistage_build.md">[click me..
 put all the files and folders in the .dockerignore file to not to copy it in the image
 
 see example <a href='./create_a_nodejs_app/.dockerignore'>[click here]</a>
+
+---
+## important: volumes and mounts
+
+Notes and example link : <a href="./binding_mounts_and_volumes/notes.md">[click me]</a>

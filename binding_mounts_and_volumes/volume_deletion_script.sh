@@ -1,0 +1,1 @@
+docker volume rm python_data_volume
