@@ -7,6 +7,7 @@
 │-- app.py
 │-- requirements.txt
 │-- README.md
+|-- .Dockerignore
 ```
 
 ## Problem Statement
@@ -36,6 +37,10 @@ The project uses:
 
 ### ** `Dockerfile` (Multi-Stage Build + Health Check)**
 -   link <a href='./Dockerfile'> [click me]</a>
+
+### ** `.Dockerignore`
+-   link <a href='./Dockerignore'> [click me]</a>
+
 ---
 
 ## How to Build and Run
