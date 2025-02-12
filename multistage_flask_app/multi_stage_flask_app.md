@@ -27,7 +27,7 @@ The project uses:
 
 ---
 
-##  File Contents
+##  File contants
 
 ### ** `app.py` (Flask Web Application)**
 -   link <a href='./app.py'> [click me]</a>

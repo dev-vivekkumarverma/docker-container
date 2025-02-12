@@ -4,75 +4,38 @@ Here’s how you can track the number of times the volume has been accessed usin
 
 ### **Step 1: Create a Docker Volume**
 Run the following command to create the volume:
+refer code volume_creation.sh <a href="./volume_creation.sh">[click me...]</a>
 ```sh
-docker volume create python_data_volume
+./volume_creation.sh
 ```
 
 ---
 
-### **Step 2: Create a Python Script (`track_access.py`)**  
+### **Step 2: Create a Python Script (`app.py`)**  
 This script will create a file inside the volume (`/data_folder/access_count.txt`) and increment the count each time the script runs.
-
-```python
-import os
-
-# Define the file path inside the mounted volume
-file_path = "/data_folder/access_count.txt"
-
-# Check if the file exists, if not create it with initial count
-if not os.path.exists(file_path):
-    with open(file_path, "w") as f:
-        f.write("1")
-    print("Volume accessed for the first time.")
-else:
-    # Read the current access count
-    with open(file_path, "r") as f:
-        count = int(f.read().strip())
-
-    # Increment and update the count
-    count += 1
-    with open(file_path, "w") as f:
-        f.write(str(count))
-
-    print(f"Volume has been accessed {count} times.")
-```
-
+see the code of app.py: Link <a href="./app.py">[click me]</a>
 ---
 
 ### **Step 3: Create a Dockerfile**
 This Dockerfile sets up a **Python 3.7 Alpine** container with our script.
-
-```dockerfile
-# Use Python 3.7 Alpine as the base image
-FROM python:3.7-alpine
-
-# Create a working directory
-WORKDIR /app
-
-# Copy the Python script into the container
-COPY track_access.py /app/
-
-# Run the script on container start
-CMD ["python", "/app/track_access.py"]
-```
-
+dockerfile contant: Link <a href="./Dockerfile">[click me]</a>
 ---
 
 ### **Step 4: Build the Docker Image**
+see the code of run build docker image : Link <a href="build_script.sh">[click me]</a>
 Run the following command to build the image:
 ```sh
-docker build -t python-volume-tracker .
+./build_script.sh
 ```
 
 ---
 
 ### **Step 5: Run the Container with Mounted Volume**
+see the contant of run.sh: Link <a href="./run.sh">[click me]</a>
+
 Run the container and mount the volume:
 ```sh
-docker run --rm \
-  --name volume_tracker \
-  --mount type=volume,source=python_data_volume,target=/data_folder \
-  python-volume-tracker
+./run.sh
 ```
 
 Each time you run the container, the script inside will increment and display the access count.
@@ -82,11 +45,12 @@ Each time you run the container, the script inside will increment and display th
 ### **Step 6: Verify the Volume Data**
 To manually check the access count, you can start a temporary container and inspect the file:
 ```sh
-docker run --rm \
+docker run --rm --init \
   --mount type=volume,source=python_data_volume,target=/data_folder \
-  alpine cat /data_folder/access_count.txt
+  python-volume-access-tracter cat /data_folder/access_count.txt
 ```
-
+### also see the content of .Dockerignore file
+-   Link: <a href="./.Dockerignore">[click me]</a>
 ---
 
 ### **Expected Output**

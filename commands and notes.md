@@ -60,7 +60,7 @@ Let's break down your `docker run` command systematically:
 
 ### perform jailing the process by cretaing and using a new root
 
-1. copy the content of bin/bash to my-new-root/bin
+1. copy the contant of bin/bash to my-new-root/bin
 ```sh
 # make the my-new-root dir
 mkdir my-new-root
@@ -68,7 +68,7 @@ mkdir my-new-root
 # create bin dir in my-new-root dir
 mkdir my-new-root/bin
 
-# copy the content of bin/bash directory of docker-host to my-new-root/bin
+# copy the contant of bin/bash directory of docker-host to my-new-root/bin
 cp bin/bash my-new-root/bin/
 
 

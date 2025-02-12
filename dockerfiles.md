@@ -46,7 +46,7 @@ From base_image_name as stage_name
 in the satage where you want to copy something from `fist_stage` use
 
 ```dockerfile
-COPY --from:stage_name --chown=user_group:username /stage_content_dir /destination_dir
+COPY --from:stage_name --chown=user_group:username /stage_contant_dir /destination_dir
 ```
 for more see here.. <a href="./multistage_build/multistage_build.md">[click me...]</a>
 
