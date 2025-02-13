@@ -182,3 +182,11 @@ services:
 - **If you want the service to be accessible externally**, you must define `ports` in `docker-compose.yml`.
 
 Would you like me to update your `docker-compose.yml` to use `build` instead of `image` for each service? 🚀
+
+
+---
+# Maintaining secretes with secrets section and .txt file for storing secrets
+
+Read more with example, Link <a href="./maintaining secrets.md">[click me]</a>
+
+---
