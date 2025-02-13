@@ -41,6 +41,15 @@ docker-compose up -d
 
 ### Stop the Services
 ```sh
+docker-compose stop 
+```
+### to restart the services
+```sh
+docker-compose start
+```
+
+### to stop and remove the containers
+```sh
 docker-compose down
 ```
 
@@ -53,7 +62,22 @@ docker-compose logs -f
 ```sh
 docker-compose -f docker_compose_file_name.yaml up
 ```
+for down command
 
+```sh
+docker-compose -f docker_compose_file_name.yaml down
+```
+
+for stopping all the containers
+
+```sh
+docker-compose -f docker_compose_file_name.yaml stop
+```
+for resuming the execution 
+
+```sh
+docker-compose -f docker_compose_file_name.yaml start
+```
 Note: in the above command, replace `docker_compose_file_name` with actual file name in which you have written docker-compose.yaml contant.
 ---
 
