@@ -1,3 +1,6 @@
+# 0. change the chmod of all the .sh files
+chmod +x *.sh
+
 # 1. create the network called app-net
 ./create_network.sh
 
