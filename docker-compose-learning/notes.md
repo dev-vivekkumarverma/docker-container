@@ -51,7 +51,7 @@ docker-compose logs -f
 
 ### If you have made docker-compose.yaml file with some other name, run it with following command
 ```sh
-docker-compose up -f docker_compose_file_name.yaml
+docker-compose -f docker_compose_file_name.yaml up
 ```
 
 Note: in the above command, replace `docker_compose_file_name` with actual file name in which you have written docker-compose.yaml contant.
