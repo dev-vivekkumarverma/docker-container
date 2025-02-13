@@ -50,7 +50,7 @@ COPY --from:stage_name --chown=user_group:username /stage_contant_dir /destinati
 ```
 for more see here.. <a href="./multistage_build/multistage_build.md">[click me...]</a>
 
-### see the Multistage build of a flask app 
+### see the `Multistage build `of a flask app 
 - link <a href='./multistage_flask_app/multi_stage_flask_app.md'> [click me...]</a>
 ---
 # `.dockerignore` file
@@ -59,6 +59,11 @@ put all the files and folders in the .dockerignore file to not to copy it in the
 see example <a href='./create_a_nodejs_app/.dockerignore'>[click here]</a>
 
 ---
-## important: volumes and mounts
+## `important: volumes and mounts`
 
 Notes and example link : <a href="./binding_mounts_and_volumes/notes.md">[click me]</a>
+
+---
+
+## `docker-network`
+Notes and example link : <a href="./docker-network/notes.md">[click me..]</a>
